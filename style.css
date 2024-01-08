@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    /* Primary Colours */
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --darkGray: hsl(0, 0%, 55%);
+    --veryDarkGray: hsl(0, 0%, 41%);
+
+    /* Boxes */
+    --boxShadow: 6rem -2px 4rem 0px rgba(0, 0, 0, 0.6) inset;
+    --boxHeight: 6.9rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+#nav-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+}
+
+.header-section {
+    background-image: url(images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: var(--white);
+}
+
+.nav-links{
+    list-style: none;
+    position: absolute;
+    top: 4rem;
+    animation-duration: 350ms;
+    animation-name: nav-toggle;
+}
+
+.nav-link{
+    padding-block: .2rem;
+}
+
+@keyframes nav-toggle {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+.hide{
+    display: none;
+}
+
+.hero-heading {
+    outline: 2px solid white;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: clamp(2rem, -0.875rem + 8.333vw, 3.5rem);
+    line-height: 1.2;
+}
+
+/* VR Section */
+
+#vr-section{
+    margin: 2rem;
+}
+
+.vr-img{
+    width: 100%;
+}
+
+.vr-title, .vr-text{
+    text-align: center;
+    margin-block: 1rem;
+}
+
+.vr-title{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* Our Creation Section */
+
+.creation-title {
+    text-align: center;
+}
+
+.boxes {
+    margin: 0 2rem 2rem 2rem;
+}
+
+.box1 {
+    background-image: url(images/mobile/image-deep-earth.jpg);
+    box-shadow: var(--boxShadow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: var(--boxHeight);
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.box2 {
+    background-image: url(images/mobile/image-night-arcade.jpg);
+    box-shadow: var(--boxShadow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: var(--boxHeight);
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.box3 {
+    background-image: url(images/mobile/image-soccer-team.jpg);
+    box-shadow: var(--boxShadow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: var(--boxHeight);
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.box4 {
+    background-image: url(images/mobile/image-grid.jpg);
+    box-shadow: var(--boxShadow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: var(--boxHeight);
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.box5 {
+    background-image: url(images/mobile/image-from-above.jpg);
+    box-shadow: var(--boxShadow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: var(--boxHeight);
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.box6 {
+    background-image: url(images/mobile/image-pocket-borealis.jpg);
+    box-shadow: var(--boxShadow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: var(--boxHeight);
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.box7 {
+    background-image: url(images/mobile/image-curiosity.jpg);
+    box-shadow: var(--boxShadow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: var(--boxHeight);
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.box8 {
+    background-image: url(images/mobile/image-fisheye.jpg);
+    box-shadow: var(--boxShadow);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: var(--boxHeight);
+    color: var(--white);
+    margin-block: 1rem;
+}
+
+.box-text {
+    padding: 2.7rem 0 1rem 1rem;
+    font-weight: 300;
+}
+
+.boxes-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.box-btn {
+    padding: 0.8rem 2.5rem;
+    background: none;
+    border: 1px solid;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.desktop {
+    display: none;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #000;
+    height: 30rem;
+    color: #fff;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2.5rem;
+    height: 100%;
+}
+
+.footer-nav{
+    padding: 2rem;
+    color: var(--white);
+}
+
+.footer-nav-links {
+    list-style: none;
+}
+
+.footer-nav-links>li {
+    padding-block: 1rem;
+    text-align: center;
+}
+
+.socials > i{
+    padding-inline: .3rem;
+    font-size: 1.5rem;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    margin: 1rem;
+}
+
+/* Desktop Styling */
+
+@media only screen and (width > 48rem) {
+
+    #content {
+        margin-inline: 7rem;
+    }
+
+    .header-section {
+        background-image: url(images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 2rem;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        position: inherit;
+    }
+
+    .nav-link {
+        padding-inline: 1rem;
+    }
+
+    #menu-btn{
+        display: none;
+    }
+
+    .hero-heading {
+        width: 50%;
+    }
+
+    /* VR Section */
+
+    #vr-section{
+        display: flex;
+        position: relative;
+        margin-bottom: 8rem;
+    }
+
+    .vr-img{
+        width: 70%;
+    }
+
+    .vr-text-section{
+        position: absolute;
+        z-index: 1;
+        right: -3rem;
+        padding: 2rem 0 0 2rem;
+        bottom: 0;
+        width: 50%;
+        background-color: #fff;
+    }
+
+    .vr-title, .vr-text{
+        text-align: inherit;
+        margin: 0;
+    }
+
+    .vr-title{
+        margin-bottom: 1rem;
+    }
+
+    /* Our Creation Section */
+
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .box {
+        height: 27rem;
+    }
+
+    .box1 {
+        background-image: url(images/desktop/image-deep-earth.jpg);
+    }
+
+    .box2 {
+        background-image: url(images/desktop/image-night-arcade.jpg);
+    }
+
+    .box3 {
+        background-image: url(images/desktop/image-soccer-team.jpg);
+    }
+
+    .box4 {
+        background-image: url(images/desktop/image-grid.jpg);
+    }
+
+    .box5 {
+        background-image: url(images/desktop/image-from-above.jpg);
+    }
+
+    .box6 {
+        background-image: url(images/desktop/image-pocket-borealis.jpg);
+    }
+
+    .box7 {
+        background-image: url(images/desktop/image-curiosity.jpg);
+    }
+
+    .box8 {
+        background-image: url(images/desktop/image-fisheye.jpg);
+    }
+
+    .desktop-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: 2rem;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    footer{
+        height: 10rem;
+        padding: .5rem;
+    }
+
+    .footer-section{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        width: 100%;
+        height: 0;
+    }
+
+    .footer-nav-links{
+        display: flex;
+    }
+
+    .footer-nav-link{
+        padding-inline: 1rem;
+    }
+
+    .footer-nav{
+        padding: 0;
+    }
+
+    .footer-desktop-title{
+        padding-inline: 1rem;
+    }
+
+    .socials{
+        align-self: end;
+    }
+
+    .footer-text{
+        margin: 1rem 0;
+    }
+
+}
